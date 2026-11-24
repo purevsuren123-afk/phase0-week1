@@ -13,16 +13,16 @@ print(check_odd_even(15))
 print(check_odd_even(16))
 print(check_odd_even(17))
 
-def check_grade(x):
-    if x >= 90 and x <= 100:
+def check_grade(score):
+    if score >= 90 and score <= 100:
         return "you got an A"
-    elif x >= 80 and x < 90:
+    elif score >= 80 and score < 90:
         return "you got a B"
-    elif x >= 70 and x < 80:
+    elif score >= 70 and score < 80:
         return "you got a C"
-    elif x >= 60 and x < 70:
+    elif score >= 60 and score < 70:
         return "you got a D"
-    elif x >= 0 and x < 60:
+    elif score >= 0 and score < 60:
         return "you got an F"
     else:
         return "you got an invalid grade"
@@ -30,6 +30,8 @@ def check_grade(x):
 score = int(input("Enter your score: "))
 print(check_grade(score))
 
-print(check_grade(95))
-print(check_grade(72))
-print(check_grade(40))
+print(check_grade(100))
+print(check_grade(90))
+print(check_grade(89))
+print(check_grade(101))
+print(check_grade(-5))
